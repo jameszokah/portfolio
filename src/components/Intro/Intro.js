@@ -4,7 +4,7 @@ import Linkedin from '../../img/linkedin.png';
 import Instagram from '../../img/instagram.png';
 import Vector1 from '../../img/Vector1.png'
 import Vector2 from '../../img/Vector2.png'
-import Me from '../../img/boy.png'
+import Me from '../../img/me-removebg.png'
 import Thumbup from '../../img/thumbup.png'
 import Glassesimoji from '../../img/glassesimoji.png'
 import Crown from '../../img/crown.png'

@@ -39,3 +39,12 @@
   border: 1px solid var(--orange);
   cursor: pointer;
 }
+
+.blur {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #edd0ff;
+  filter: blur(72px);
+  z-index: -9;
+
+} 
