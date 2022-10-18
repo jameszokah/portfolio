@@ -1,0 +1,58 @@
+.contact-form {
+    display: flex;
+    padding: 0 3rem;
+    padding-top: 0.6rem;
+    height: 70vh;
+    /* justify-content: space-between; */
+}
+
+.c-awesome {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* background-color: #ABF1FF94; */
+}
+
+.c-awesome span:nth-child(1) {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.c-awesome span:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--orange);
+    
+}
+
+.c-right {
+    position: relative;
+    padding-left: 14rem;
+}
+
+.c-right > form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.c-right .user {
+    border: 2.5px solid var(--orange);
+    box-shadow: var(--smboxShadow);
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 25rem;
+    outline: none;
+}
+
+.c-right .user:focus {
+    outline: none;
+}
+
+.c-btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 

@@ -44,3 +44,25 @@
     color: var(--orange);
 }
 
+
+.nav-list>ul .link:hover {
+    cursor: pointer;
+    color: var(--orange);
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-left {
+        justify-content: space-between;
+    }
+}

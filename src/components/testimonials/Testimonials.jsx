@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './Testimonials.css';
 import data from '../../data';
 import { Pagination } from 'swiper';
-import 'swiper/css/paginations'
-import 'swiper/css'
+import 'swiper/css/pagination';
+import 'swiper/css';
+import { themeContext } from '../../context/context';
 
 
 const Testimonials = () => {
-
+    const {state} = useContext(themeContext)
+    const darkMode = state.darkMode;
     const testimonials = data?.testimonials;
 
 
   return (
-    <div className='t-wrapper'>
+    <div className='t-wrapper' id='Testimonials'>
         <div className="t-heading">
             <span>Clients Always get </span>
             <span>Expcetional Work </span>
@@ -36,7 +38,7 @@ const Testimonials = () => {
                             <div className="testimonials">
                                 <img src={client.img} alt={client.name} />
                                 <span>{client.name}</span>
-                                <span>{client.review}</span>
+                                <span style={{color: darkMode ? '#fff' : ''}}>{client.review}</span>
                             </div>
                         </SwiperSlide>
                     );

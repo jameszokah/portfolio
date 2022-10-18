@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+    margin-top: -7rem;
+}
+
+.f-content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    color: #fff;
+    width: 100vw;
+    font-size: 1.1rem;
+    gap: 4rem;
+}
+
+.f-content a {
+    color: #fff;
+    text-decoration: none;
+    text-decoration-style: none; 
+}
+
+.f-icons {
+    display: flex;
+    gap: 2rem;
+}

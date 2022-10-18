@@ -103,3 +103,13 @@
     z-index: -9;
 
 } 
+
+@media screen and (max-width: 480px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-right {
+        transform: scale(0.8);
+    }
+}

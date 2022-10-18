@@ -3,7 +3,7 @@ import data from '../../data';
 
 const Experience = () => {
   return (
-    <div className='experience'>
+    <div className='experience' id='Experience'>
         {data.experience.map((item) => (
             <div className="achievement" key={item['type']}>
             <div className="circle">{item['number']}</div>

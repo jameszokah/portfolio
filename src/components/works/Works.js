@@ -4,13 +4,20 @@ import Amazon from '../../img/amazon.png';
 import Fiverr from '../../img/fiverr.png';
 import Shopify from '../../img/Shopify.png';
 import Facebook from '../../img/Facebook.png';
+import { useContext } from 'react';
+import { themeContext } from '../../context/context';
+import { motion } from 'framer-motion';
 
 
 const Works = () => {
+
+  const {state} = useContext(themeContext)
+    const darkMode = state.darkMode;
+
   return (
     <div className='works'>
          <div className="awesome">
-            <span>My Works </span>
+            <span style={{color: darkMode ? '#fff' : ''}}>My Works </span>
             <span> Brand </span>
             <span>
                 Lorem ipsum dolorelit. possimus laudantium minus dolores aut deleniti 
@@ -29,7 +36,12 @@ const Works = () => {
         {/* right side  */}
 
         <div className="w-right">
-          <div className='w-mainCircle'>
+          <motion.div
+           initial={{rotate: 45}}
+           whileInView={{rotate: 0}}
+           transition={{duration: 3.5, type: 'spring'}}
+           viewport={{margin: '-40px'}} 
+          className='w-mainCircle'>
             <div className='w-secCircle'>
               <img src={Upwork} alt='upwork' />
             </div>
@@ -46,12 +58,12 @@ const Works = () => {
               <img src={Shopify} alt='Shopify' />
             </div>
 
+
+        </motion.div>
             {/* backgroud circle */}
              <div className='w-backCircle blueCircle'></div>
              <div className='w-backCircle yellowCircle'></div>
-
           </div>
-        </div>
 
     </div>
   )

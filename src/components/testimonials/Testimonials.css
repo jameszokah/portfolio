@@ -45,7 +45,8 @@
     height: 12rem;
     padding: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     background: rgba(255, 255, 255, 0.26);
     border: 7px solid var(--blueCard);
@@ -59,9 +60,15 @@
     border-radius: 50%;
 }
 
-.testimonials > span {
+.testimonials  span {
     color: var(--grey);
 }
+
+.testimonials  span:nth-child(2) {
+    color: var(--orange);
+    font-size: 1.5rem;
+}
+
 
 
 .t-wrapper .swiper {
@@ -74,4 +81,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.t-wrapper .swiper-pagination-bullet-active {
+    background-color: var(--orange);
 }

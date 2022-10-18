@@ -7,6 +7,7 @@
 
 .awesome > span:nth-child(3) {
     padding-bottom: 1.2rem;
+    line-height: 1.1rem;
 }
 
 .w-right {
@@ -80,18 +81,18 @@
     width: 13rem;
     height: 13rem;
     border-radius: 50%;
-    z-index: -1;
+    z-index: -3;
 
 }
 
 .blueCircle {
     background-color: #1949B8;
     top: 0rem;
-    left: 8rem;
+    left: 16rem;
 }
 
 .yellowCircle {
     background-color: #F5C32C;
     top: 8rem;
-    left: 8rem;
+    left: 16rem;
 }

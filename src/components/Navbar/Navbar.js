@@ -1,22 +1,36 @@
+import { Link } from 'react-scroll';
+import Toggle from '../toggle/Toggle';
 import './Navbar.css';
 const Navbar = () => {
   return (
     <div className="nav-wrapper">
         <div className="nav-left">
             <div className="nav-name">James</div>
-            <span>toggle</span>
+            <Toggle />
         </div>
         <div className="nav-right">
             <div className="nav-list">
                 <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Experience</li>                    
-                    <li>Portfolio</li>
-                    <li>Testimonials</li>
+                    <Link className='link' spy to='Intro' smooth activeClass='activeClass'>
+                        <li>Home</li>
+                    </Link>
+                    <Link  className='link' spy to='Services' smooth >
+                        <li>Services</li>
+                    </Link>
+                    <Link className='link' spy to='Experience' smooth >
+                        <li>Experience</li>
+                    </Link>
+                    <Link className='link' spy to='Portfolio' smooth >
+                        <li>Portfolio</li>
+                    </Link>                   
+                    <Link className='link' spy to='Testimonials' smooth >
+                        <li>Testimonials</li>
+                    </Link> 
                 </ul>
             </div>
-            <button className="btn nav-btn">Contact</button>
+            <Link className='btn nav-btn' spy to='Contact' smooth >
+                    <span>Contact</span>
+                    </Link> 
         </div>
     </div>
   )
