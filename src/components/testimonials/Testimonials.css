@@ -86,3 +86,14 @@
 .t-wrapper .swiper-pagination-bullet-active {
     background-color: var(--orange);
 }
+
+
+@media screen and (max-width: 480px) { 
+    .t-wrapper {
+        padding: 0;
+    }
+
+    .testimonials > img {
+        transform: scale(0.7);
+    }
+}

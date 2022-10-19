@@ -29,3 +29,24 @@
     display: flex;
     gap: 2rem;
 }
+
+@media screen and (max-width: 480px) {
+
+    .footer {
+        left: 2.4rem;
+        bottom: 0px;
+    }
+    .f-content {
+        margin-top: 0;
+        width: auto;
+        gap: 2rem;
+    }
+
+    .f-icons {
+        gap: 1rem;
+    }
+
+    .f-icons a {
+        transform: scale(0.7);
+    }
+}

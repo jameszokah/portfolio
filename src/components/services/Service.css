@@ -45,3 +45,24 @@
 .s-cards>*{
     position: absolute;
 }
+
+@media screen and (max-width: 480px) {
+    .service {
+        margin-top: 0rem;
+        flex-direction: column;
+        padding: 0;
+        height: 66rem;
+        gap:5rem
+    }
+
+    .s-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+        
+    }
+
+    .s-cards > * {
+        position: static;
+    }
+}

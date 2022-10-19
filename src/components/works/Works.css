@@ -96,3 +96,26 @@
     top: 8rem;
     left: 16rem;
 }
+
+@media screen and (max-width: 480px) {
+    .works {
+        flex-direction: column;
+        gap: 5rem;
+        height: 55rem;
+        padding: 0;
+    }
+
+    .w-right {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transform: scale(0.7);
+    }
+
+    .w-mainCircle {
+        position: static;
+    } 
+    .w-backCircle {
+        left: 8rem !important;
+    } 
+}
