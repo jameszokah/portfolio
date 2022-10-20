@@ -50,3 +50,11 @@
         transform: scale(0.7);
     }
 }
+
+
+@media screen and (max-width: 375px) {
+   
+    .f-content a span:nth-child(1) {
+        color: gray;
+    }
+}

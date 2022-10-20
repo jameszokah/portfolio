@@ -3,8 +3,16 @@ import {createContext, useReducer} from 'react';
 
 export const themeContext = createContext();
 
-const initState = {
-    darkMode: true
+let INIT_STATE;
+
+if (localStorage && localStorage.getItem("darkMode")) {
+  INIT_STATE = {
+    darkMode: JSON.parse(localStorage.getItem("darkMode")),
+  };
+} else {
+  INIT_STATE = {
+    darkMode: false,
+  };
 }
 
 const themeReducer = (state, action) => {
@@ -20,7 +28,11 @@ const themeReducer = (state, action) => {
 }
 
 const ThemeProvider = ({children}) => {
-    const [state, dispatch] = useReducer(themeReducer,initState);
+    const [state, dispatch] = useReducer(themeReducer,INIT_STATE);
+
+    localStorage &&
+    localStorage.setItem("darkMode", JSON.stringify(state.darkMode));
+
 
     return (
         <themeContext.Provider value={{state, dispatch}}>

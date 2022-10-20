@@ -74,4 +74,22 @@
     .c-right .user {
         width: auto;
     }
+
+    .c-thanks {
+        padding: 2rem 6rem;
+     }
+}
+
+@media screen and (max-width: 375px) {
+    .contact-form {
+        height: 94vh;
+    }
+
+    .f-content span:nth-child(1) {
+        color: gray;
+    }
+
+    .c-thanks {
+       padding: -1rem 4rem;
+    }
 }

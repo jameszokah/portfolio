@@ -28,9 +28,9 @@ const Service = () => {
             <span style={{color: darkMode ? '#fff' : ''}}>My Awesome </span>
             <span> service </span>
             <span style={{color: darkMode ? '#c3bfbf' : ''}}>
-                Lorem ipsum dolorelit. possimus laudantium minus dolores aut deleniti 
+            Upwork Freelancer. With over 3 years of experience, 
                 <br />
-             neque enim veritatis optio? Omnis aspernatur minima odio!
+            I can assist you to address any challenges you may have..
            .</span>
            <a href={Resume} download style={{marginTop: '1rem'}}>
             <button className="btn s-btn">Download resume</button>

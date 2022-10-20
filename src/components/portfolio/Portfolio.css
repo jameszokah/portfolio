@@ -40,6 +40,11 @@
     border-radius: 20px;
 }
 
+.p-link {
+    color: white;
+    text-decoration: none;
+}
+
 /* .p-img > img {
     width: 100%;
 } */

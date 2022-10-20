@@ -36,8 +36,8 @@ const Contact = () => {
                 <div className="c-btn2">
                 <input type="submit" value="send" className="btn" />
 
-                <span>{done && 'Thank you for contacting me 😊'}</span>
                 </div>
+                <span className='c-thanks'>{done && 'Thank you for contacting me 😊'}</span>
                 <div className="blur c-blur1" style={{backgroundColor: 'var(--purple)', width: '10rem', height: '4rem', top: '0rem', left: '20rem'}}></div>
             </form>
         </div>
