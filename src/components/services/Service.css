@@ -59,8 +59,12 @@
         display: flex;
         flex-direction: column;
         gap: 17rem;
-        
+
     }
+
+    /* .s-cards > * + * { 
+        margin-bottom: 17rem;
+    } */
 
     .s-cards > * {
         position: static;
