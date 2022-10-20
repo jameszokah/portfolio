@@ -8,7 +8,7 @@ const FloatingDiv = ({img, txt1, txt2}) => {
   return (
     <div className="floatingDiv">
         <img src={img} alt={img} />
-        <span style={{color: darkMode ? '#000' : '#fff'}}>
+        <span style={{color: darkMode ? '#000' : '#000'}}>
             {txt1}
             <br />
             {txt2}

@@ -6,9 +6,14 @@ import Blog from '../../img/blog.png'
 import Yuutube from '../../img/youtube-clone.png'
 import Spotify from '../../img/spotify.png'
 import Metap from '../../img/metap.png'
-import 'swiper/css';
 import { themeContext } from '../../context/context';
 import { useResponsive } from '../../hooks/useResponsive';
+import { Navigation } from "swiper";
+// Import Swiper styles
+import "swiper/css";
+// import "swiper/swiper.min.css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 
 const Portfolio = () => {
@@ -26,7 +31,7 @@ const Portfolio = () => {
     <span>Portfolio</span>
 
     {/* slider */}
-    <Swiper spaceBetween={30} slidesPerView={width < 480 ? 1 : 3} grabCursor className='portfolio-slider'>
+    <Swiper spaceBetween={20} modules={[Navigation]} navigation={width > 480 ? true : false}  slidesPerView={width < 480 ? 1 : 3} grabCursor className='portfolio-slider'>
         <SwiperSlide>
                 <a href="https://noflix.netlify.app" target="_blank" rel="noopener noreferrer" className="p-link">
                         <img src={Netflix} alt='netflix' />

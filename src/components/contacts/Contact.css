@@ -61,6 +61,7 @@
     .contact-form {
         flex-direction: column;
         padding: 0;
+        height: 32rem;
     }
 
     .c-right {
@@ -82,7 +83,7 @@
 
 @media screen and (max-width: 375px) {
     .contact-form {
-        height: 94vh;
+        height: 108vh;
     }
 
     .f-content span:nth-child(1) {

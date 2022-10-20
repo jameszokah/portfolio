@@ -30,7 +30,7 @@ const Service = () => {
             <span style={{color: darkMode ? '#c3bfbf' : ''}}>
             Upwork Freelancer. With over 3 years of experience, 
                 <br />
-            I can assist you to address any challenges you may have..
+            I have assisted business address any challenges they had..
            .</span>
            <a href={Resume} download style={{marginTop: '1rem'}}>
             <button className="btn s-btn">Download resume</button>
