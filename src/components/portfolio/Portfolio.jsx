@@ -3,9 +3,11 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import './Portfolio.css';
 import Netflix from '../../img/netflix.png'
 import Blog from '../../img/blog.png'
-import Yuutube from '../../img/youtube-clone.png'
+// import Yuutube from '../../img/youtube-clone.png'
 import Spotify from '../../img/spotify.png'
 import Metap from '../../img/metap.png'
+import MetapNew from '../../img/metap_new.png'
+import Yamazon from '../../img/yamazon.png'
 import { themeContext } from '../../context/context';
 import { useResponsive } from '../../hooks/useResponsive';
 import { Navigation } from "swiper";
@@ -32,14 +34,19 @@ const Portfolio = () => {
 
     {/* slider */}
     <Swiper spaceBetween={20} modules={[Navigation]} navigation={width > 480 ? true : false}  slidesPerView={width < 480 ? 1 : 3} grabCursor className='portfolio-slider'>
+    <SwiperSlide>
+                <a href="https://metap.live" target="_blank" rel="noopener noreferrer" className="p-link">
+                        <img src={MetapNew} alt='metap new' />
+                </a>
+        </SwiperSlide>
         <SwiperSlide>
-                <a href="https://noflix.netlify.app" target="_blank" rel="noopener noreferrer" className="p-link">
+                <a href="https://noflix-web.vercel.app" target="_blank" rel="noopener noreferrer" className="p-link">
                         <img src={Netflix} alt='netflix' />
                 </a>
         </SwiperSlide>
         <SwiperSlide>
-        <a href="https://yuutube.netlify.app" target="_blank" rel="noopener noreferrer" className="p-link">
-                <img src={Yuutube} alt='yuutube' />
+        <a href="https://yamazon-admin.vercel.app/" target="_blank" rel="noopener noreferrer" className="p-link">
+                <img src={Yamazon} alt='yuutube' />
         </a>
         </SwiperSlide>
         <SwiperSlide>
